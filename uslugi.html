@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usługi | Usługi Dekarskie Mosina</title>
+<meta name="description" content="Pełna oferta Usług Dekarskich w Mosinie: montaż dachu, naprawa dachów, naprawy i utrzymanie, remonty domów, usuwanie eternitu i doradztwo.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2317171a'/%3E%3Cpath d='M8 40 L32 16 L56 40' fill='none' stroke='%23c85f34' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18 40 V52 H46 V40' fill='none' stroke='%23f6f1e4' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#1c1a17',
+          'ink-soft': '#4d473e',
+          paper: '#ece5d6',
+          'paper-raised': '#f6f1e4',
+          charcoal: '#17171a',
+          'charcoal-raised': '#212024',
+          clay: '#a6461f',
+          'clay-dark': '#7c3216',
+          'clay-bright': '#c85f34',
+          slate: '#57636a',
+          'slate-light': '#98a7ad',
+        },
+        fontFamily: {
+          display: ['"Anton"', 'sans-serif'],
+          sans: ['"Work Sans"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-paper text-ink">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50 is-scrolled">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2 group">
+      <span class="font-display text-xl md:text-2xl tracking-tight leading-none text-paper-raised">
+        USŁUGI <span class="text-clay-bright">DEKARSKIE</span>
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wide">
+      <a href="uslugi.html" class="nav-link text-paper-raised">Usługi</a>
+      <a href="index.html#realizacje" class="nav-link">Realizacje</a>
+      <a href="index.html#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <a href="tel:789685846" class="btn btn-primary rounded-full px-5 py-2.5 text-sm">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      789 685 846
+    </a>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="relative bg-charcoal overflow-hidden pt-32 pb-28 md:pt-40 md:pb-36 px-5 md:px-8 pitch-edge-b">
+  <div class="blueprint"></div>
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <a href="index.html" class="inline-flex items-center gap-2 text-slate-light hover:text-clay-bright transition-colors text-sm font-semibold uppercase tracking-wide mb-8">
+      <i data-lucide="arrow-left" class="w-4 h-4"></i>
+      Strona główna
+    </a>
+    <div class="rule-bar mb-5"></div>
+    <h1 class="font-display uppercase text-paper-raised leading-[0.95] tracking-tight text-5xl sm:text-6xl md:text-7xl max-w-4xl">
+      Dach od pierwszej <span class="text-clay-bright">łaty</span>
+    </h1>
+    <p class="mt-6 text-lg md:text-xl text-slate-light max-w-2xl leading-relaxed">
+      Sześć usług dekarsko-budowlanych w jednych rękach. Montaż, naprawy, remonty i doradztwo, wykonane przez tę samą ekipę od początku do końca.
+    </p>
+  </div>
+</section>
+
+<!-- ============ SERVICE CARDS ============ -->
+<section class="py-20 md:py-24 px-5 md:px-8 bg-paper">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <article class="surface-card pitch-card p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-clay/10 flex items-center justify-center mb-6">
+          <i data-lucide="home" class="w-7 h-7 text-clay-dark"></i>
+        </div>
+        <h2 class="font-display uppercase text-2xl tracking-tight mb-3">Montaż dachu</h2>
+        <p class="text-ink-soft leading-relaxed">Krycie nowych dachów od podstaw, łącznie z łaceniem, membraną, dachówką lub blachą i obróbkami przy kominach i oknach połaciowych.</p>
+      </article>
+
+      <article class="surface-card pitch-card p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-clay/10 flex items-center justify-center mb-6">
+          <i data-lucide="wrench" class="w-7 h-7 text-clay-dark"></i>
+        </div>
+        <h2 class="font-display uppercase text-2xl tracking-tight mb-3">Naprawa dachów</h2>
+        <p class="text-ink-soft leading-relaxed">Usuwamy przecieki, wymieniamy uszkodzone dachówki, łaty i obróbki blacharskie, również w trybie pilnym.</p>
+      </article>
+
+      <article class="surface-card pitch-card p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-clay/10 flex items-center justify-center mb-6">
+          <i data-lucide="clipboard-check" class="w-7 h-7 text-clay-dark"></i>
+        </div>
+        <h2 class="font-display uppercase text-2xl tracking-tight mb-3">Naprawy i utrzymanie</h2>
+        <p class="text-ink-soft leading-relaxed">Okresowe przeglądy stanu pokrycia, czyszczenie i drobne naprawy, które wydłużają żywotność dachu i zapobiegają awariom.</p>
+      </article>
+
+      <article class="surface-card pitch-card p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-clay/10 flex items-center justify-center mb-6">
+          <i data-lucide="building-2" class="w-7 h-7 text-clay-dark"></i>
+        </div>
+        <h2 class="font-display uppercase text-2xl tracking-tight mb-3">Remonty domów</h2>
+        <p class="text-ink-soft leading-relaxed">Prace ogólnobudowlane związane z dachem i bryłą budynku: elewacje, obróbki blacharskie i wykończenia zewnętrzne.</p>
+      </article>
+
+      <article class="surface-card pitch-card p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-clay/10 flex items-center justify-center mb-6">
+          <i data-lucide="shield-alert" class="w-7 h-7 text-clay-dark"></i>
+        </div>
+        <h2 class="font-display uppercase text-2xl tracking-tight mb-3">Usuwanie eternitu</h2>
+        <p class="text-ink-soft leading-relaxed">Bezpieczny demontaż, pakowanie i utylizacja płyt eternitowych zgodnie z przepisami dotyczącymi azbestu.</p>
+      </article>
+
+      <article class="surface-card pitch-card p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-clay/10 flex items-center justify-center mb-6">
+          <i data-lucide="lightbulb" class="w-7 h-7 text-clay-dark"></i>
+        </div>
+        <h2 class="font-display uppercase text-2xl tracking-tight mb-3">Doradztwo</h2>
+        <p class="text-ink-soft leading-relaxed">Pomoc w doborze pokrycia i rozwiązań technicznych, wycena i konsultacja, zanim zapadnie decyzja o inwestycji.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="relative py-20 px-5 md:px-8 bg-charcoal overflow-hidden">
+  <div class="blueprint"></div>
+  <div class="grain"></div>
+  <div class="relative max-w-3xl mx-auto text-center">
+    <h2 class="font-display uppercase text-4xl md:text-5xl leading-[0.95] tracking-tight text-paper-raised mb-5">
+      Nie widzisz swojej usługi?
+    </h2>
+    <p class="text-slate-light text-lg leading-relaxed mb-9 max-w-xl mx-auto">
+      Zadzwoń i opisz problem. Przy dekarstwie prawie każde zlecenie da się dopasować, na pewno pomożemy.
+    </p>
+    <a href="tel:789685846" class="btn btn-primary rounded-full px-8 py-4 text-base inline-flex">
+      <i data-lucide="phone-call" class="w-5 h-5"></i>
+      Zadzwoń: 789 685 846
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-charcoal px-5 md:px-8 pt-16 pb-8 border-t border-white/10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <span class="font-display text-xl tracking-tight leading-none text-paper-raised block mb-4">
+          USŁUGI <span class="text-clay-bright">DEKARSKIE</span>
+        </span>
+        <p class="text-slate-light text-sm leading-relaxed max-w-xs">Firma budowlana. Montaż, naprawy i remonty dachów w Mosinie i okolicy.</p>
+      </div>
+      <div class="text-sm">
+        <div class="text-slate-light uppercase tracking-wide text-xs mb-4">Nawigacja</div>
+        <ul class="space-y-2">
+          <li><a href="uslugi.html" class="nav-link">Usługi</a></li>
+          <li><a href="index.html#realizacje" class="nav-link">Realizacje</a></li>
+          <li><a href="index.html#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="text-sm">
+        <div class="text-slate-light uppercase tracking-wide text-xs mb-4">Kontakt</div>
+        <ul class="space-y-2 text-paper-raised">
+          <li><a href="tel:789685846" class="nav-link">789 685 846</a></li>
+          <li class="text-slate-light">Adama Mickiewicza 2</li>
+          <li class="text-slate-light">62-050 Mosina</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-light">
+      <span>© 2026 Usługi Dekarskie. Wszelkie prawa zastrzeżone.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  lucide.createIcons();
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+</body>
+</html>

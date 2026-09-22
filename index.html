@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usługi Dekarskie | Dekarz Mosina i okolice</title>
+<meta name="description" content="Usługi Dekarskie z Mosiny. Montaż i naprawa dachów, remonty domów, usuwanie eternitu i doradztwo dekarskie w Mosinie i okolicy.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2317171a'/%3E%3Cpath d='M8 40 L32 16 L56 40' fill='none' stroke='%23c85f34' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18 40 V52 H46 V40' fill='none' stroke='%23f6f1e4' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#1c1a17',
+          'ink-soft': '#4d473e',
+          paper: '#ece5d6',
+          'paper-raised': '#f6f1e4',
+          charcoal: '#17171a',
+          'charcoal-raised': '#212024',
+          clay: '#a6461f',
+          'clay-dark': '#7c3216',
+          'clay-bright': '#c85f34',
+          slate: '#57636a',
+          'slate-light': '#98a7ad',
+        },
+        fontFamily: {
+          display: ['"Anton"', 'sans-serif'],
+          sans: ['"Work Sans"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-paper text-ink">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2 group">
+      <span class="font-display text-xl md:text-2xl tracking-tight leading-none text-paper-raised">
+        USŁUGI <span class="text-clay-bright">DEKARSKIE</span>
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wide">
+      <a href="uslugi.html" class="nav-link">Usługi</a>
+      <a href="#realizacje" class="nav-link">Realizacje</a>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <a href="tel:789685846" class="btn btn-primary rounded-full px-5 py-2.5 text-sm">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      789 685 846
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="relative min-h-[100svh] flex items-end overflow-hidden bg-charcoal pitch-edge-b">
+  <img src="images/1.jpg" alt="Dach kryty dachówką ceramiczną w kolorze grafitowym" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 hero-scrim"></div>
+  <div class="grain"></div>
+
+  <div class="relative max-w-7xl mx-auto w-full px-5 md:px-8 pb-28 md:pb-44 pt-32">
+    <div class="max-w-3xl">
+      <h1 class="font-display uppercase text-paper-raised leading-[0.95] tracking-tight text-[2.8rem] sm:text-6xl md:text-7xl">
+        Dach, który<br><span class="text-clay-bright">wytrzyma pokolenia.</span>
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-slate-light max-w-xl leading-relaxed">
+        Montaż, naprawy i remonty dachów w Mosinie i okolicy. Od pierwszych oględzin po ostatnią dachówkę, uczciwie i solidnie.
+      </p>
+
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="tel:789685846" class="btn btn-primary rounded-full px-7 py-4 text-base">
+          <i data-lucide="phone-call" class="w-5 h-5"></i>
+          Zadzwoń: 789 685 846
+        </a>
+        <a href="#realizacje" class="btn btn-outline rounded-full px-7 py-4 text-base">
+          Zobacz realizacje
+          <i data-lucide="arrow-down-right" class="w-5 h-5"></i>
+        </a>
+      </div>
+
+      <div class="mt-10 flex flex-wrap gap-3 text-sm font-medium">
+        <div class="stat-pill rounded-full px-4 py-2 flex items-center gap-2 text-paper-raised">
+          <i data-lucide="circle" id="status-dot" class="w-2.5 h-2.5 fill-current text-clay-bright"></i>
+          <span id="status-text">Sprawdzanie godzin…</span>
+        </div>
+        <div class="stat-pill rounded-full px-4 py-2 flex items-center gap-2 text-paper-raised">
+          <i data-lucide="map-pin" class="w-4 h-4 text-clay-bright"></i> Mosina i okolice
+        </div>
+        <div class="stat-pill rounded-full px-4 py-2 flex items-center gap-2 text-paper-raised">
+          <i data-lucide="hard-hat" class="w-4 h-4 text-clay-bright"></i> Firma budowlana
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="relative py-20 md:py-28 px-5 md:px-8 bg-paper">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl mb-14">
+      <div class="rule-bar mb-5"></div>
+      <h2 class="font-display uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight">
+        Dlaczego warto wybrać <span class="text-clay">naszą ekipę</span>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="surface-card pitch-card p-8 reveal">
+        <div class="w-12 h-12 rounded-full bg-clay/10 flex items-center justify-center mb-6">
+          <i data-lucide="zap" class="w-6 h-6 text-clay-dark"></i>
+        </div>
+        <h3 class="font-display uppercase text-2xl tracking-tight mb-3">Szybka reakcja</h3>
+        <p class="text-ink-soft leading-relaxed">Przy przecieku czy uszkodzeniu po burzy zjawiamy się szybko, oceniamy sytuację i mówimy wprost, co trzeba zrobić.</p>
+      </div>
+      <div class="surface-card pitch-card p-8 reveal">
+        <div class="w-12 h-12 rounded-full bg-clay/10 flex items-center justify-center mb-6">
+          <i data-lucide="hand-coins" class="w-6 h-6 text-clay-dark"></i>
+        </div>
+        <h3 class="font-display uppercase text-2xl tracking-tight mb-3">Uczciwa wycena</h3>
+        <p class="text-ink-soft leading-relaxed">Cena ustalona przed rozpoczęciem prac zostaje po ich zakończeniu. Żadnych ukrytych kosztów i naciągania na zbędne prace.</p>
+      </div>
+      <div class="surface-card pitch-card p-8 reveal">
+        <div class="w-12 h-12 rounded-full bg-clay/10 flex items-center justify-center mb-6">
+          <i data-lucide="hard-hat" class="w-6 h-6 text-clay-dark"></i>
+        </div>
+        <h3 class="font-display uppercase text-2xl tracking-tight mb-3">Solidne wykonanie</h3>
+        <p class="text-ink-soft leading-relaxed">Od pokryć ceramicznych po blachę na klik. Każdy dach traktujemy jak własny i doglądamy go do ostatniego detalu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="uslugi" class="relative pt-20 pb-28 md:pt-28 md:pb-40 px-5 md:px-8 bg-charcoal overflow-hidden">
+  <div class="blueprint"></div>
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
+      <div class="max-w-2xl">
+        <div class="rule-bar mb-5"></div>
+        <h2 class="font-display uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight text-paper-raised">
+          Usługi <span class="text-clay-bright">dekarskie</span>
+        </h2>
+      </div>
+      <a href="uslugi.html" class="btn btn-outline rounded-full px-6 py-3.5 text-sm uppercase tracking-wide shrink-0">
+        Wszystkie usługi
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="dark-card pitch-card p-7 reveal">
+        <i data-lucide="home" class="w-7 h-7 text-clay-bright mb-5"></i>
+        <h3 class="font-display uppercase text-xl tracking-tight text-paper-raised mb-2">Montaż dachu</h3>
+        <p class="text-slate-light text-sm leading-relaxed">Krycie nowych dachów od podstaw, wraz z łaceniem, membraną i obróbkami blacharskimi.</p>
+      </div>
+      <div class="dark-card pitch-card p-7 reveal">
+        <i data-lucide="wrench" class="w-7 h-7 text-clay-bright mb-5"></i>
+        <h3 class="font-display uppercase text-xl tracking-tight text-paper-raised mb-2">Naprawa dachów</h3>
+        <p class="text-slate-light text-sm leading-relaxed">Usuwamy przecieki i wymieniamy uszkodzone elementy pokrycia, także w trybie pilnym.</p>
+      </div>
+      <div class="dark-card pitch-card p-7 reveal">
+        <i data-lucide="clipboard-check" class="w-7 h-7 text-clay-bright mb-5"></i>
+        <h3 class="font-display uppercase text-xl tracking-tight text-paper-raised mb-2">Naprawy i utrzymanie</h3>
+        <p class="text-slate-light text-sm leading-relaxed">Przeglądy okresowe i drobne naprawy, które utrzymują dach w dobrym stanie przez lata.</p>
+      </div>
+      <div class="dark-card pitch-card p-7 reveal">
+        <i data-lucide="building-2" class="w-7 h-7 text-clay-bright mb-5"></i>
+        <h3 class="font-display uppercase text-xl tracking-tight text-paper-raised mb-2">Remonty domów</h3>
+        <p class="text-slate-light text-sm leading-relaxed">Prace ogólnobudowlane związane z dachem i bryłą budynku, od elewacji po obróbki.</p>
+      </div>
+      <div class="dark-card pitch-card p-7 reveal">
+        <i data-lucide="shield-alert" class="w-7 h-7 text-clay-bright mb-5"></i>
+        <h3 class="font-display uppercase text-xl tracking-tight text-paper-raised mb-2">Usuwanie eternitu</h3>
+        <p class="text-slate-light text-sm leading-relaxed">Bezpieczny demontaż i utylizacja płyt eternitowych zgodnie z obowiązującymi przepisami.</p>
+      </div>
+      <div class="dark-card pitch-card p-7 reveal">
+        <i data-lucide="lightbulb" class="w-7 h-7 text-clay-bright mb-5"></i>
+        <h3 class="font-display uppercase text-xl tracking-tight text-paper-raised mb-2">Doradztwo</h3>
+        <p class="text-slate-light text-sm leading-relaxed">Pomagamy dobrać pokrycie i rozwiązania techniczne, zanim zapadnie decyzja o inwestycji.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="realizacje" class="py-20 md:py-28 px-5 md:px-8 bg-paper">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl mb-14">
+      <div class="rule-bar mb-5"></div>
+      <h2 class="font-display uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight">
+        Realizacje <span class="text-clay">z Mosiny i okolic</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[160px] md:auto-rows-[220px]">
+      <button class="gallery-item pitch-card row-span-2 col-span-1" data-full="images/1.jpg" data-caption="Dach kryty dachówką ceramiczną w kolorze grafitowym">
+        <img src="images/1.jpg" alt="Dach kryty dachówką ceramiczną w kolorze grafitowym" class="w-full h-full object-cover">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs uppercase font-semibold">Pokrycie dachówką</span>
+      </button>
+      <button class="gallery-item pitch-card" data-full="images/2.jpg" data-caption="Nowy dach na budynku gospodarczym w trakcie budowy">
+        <img src="images/2.jpg" alt="Nowy dach na budynku gospodarczym w trakcie budowy" class="w-full h-full object-cover">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs uppercase font-semibold">Montaż dachu</span>
+      </button>
+      <button class="gallery-item pitch-card" data-full="images/3.jpg" data-caption="Dom w trakcie budowy z pokrytym już dachem">
+        <img src="images/3.jpg" alt="Dom w trakcie budowy z pokrytym już dachem" class="w-full h-full object-cover">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs uppercase font-semibold">Realizacja domu</span>
+      </button>
+      <button class="gallery-item pitch-card row-span-2" data-full="images/4.jpg" data-caption="Obróbka blacharska komina na dachu z dachówki">
+        <img src="images/4.jpg" alt="Obróbka blacharska komina na dachu z dachówki" class="w-full h-full object-cover">
+        <span class="gallery-caption absolute bottom-3 left-3 right-3 text-paper-raised text-xs uppercase font-semibold">Obróbka blacharska</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="kontakt" class="py-20 md:py-28 px-5 md:px-8 bg-charcoal relative overflow-hidden">
+  <div class="blueprint"></div>
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-12">
+    <div>
+      <div class="rule-bar mb-5"></div>
+      <h2 class="font-display uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight mb-6 text-paper-raised">
+        Umówmy <span class="text-clay-bright">wycenę</span>
+      </h2>
+      <p class="text-slate-light text-lg leading-relaxed max-w-lg mb-10">
+        Zadzwoń i opowiedz, co dzieje się z dachem. Ustalimy termin oględzin i powiemy uczciwie, ile będzie kosztować naprawa.
+      </p>
+
+      <div class="space-y-5">
+        <a href="tel:789685846" class="flex items-center gap-4 dark-card pitch-card p-5 group">
+          <div class="w-12 h-12 rounded-full bg-clay/10 flex items-center justify-center shrink-0">
+            <i data-lucide="phone" class="w-5 h-5 text-clay-bright"></i>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wide text-slate-light mb-1">Telefon</div>
+            <div class="font-display text-2xl tracking-tight text-paper-raised">789 685 846</div>
+          </div>
+        </a>
+        <div class="flex items-center gap-4 dark-card pitch-card p-5">
+          <div class="w-12 h-12 rounded-full bg-clay/10 flex items-center justify-center shrink-0">
+            <i data-lucide="map-pin" class="w-5 h-5 text-clay-bright"></i>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wide text-slate-light mb-1">Adres</div>
+            <div class="font-display text-xl tracking-tight text-paper-raised">Adama Mickiewicza 2, 62-050 Mosina</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 dark-card pitch-card p-5">
+          <div class="w-12 h-12 rounded-full bg-clay/10 flex items-center justify-center shrink-0">
+            <i data-lucide="clock" class="w-5 h-5 text-clay-bright"></i>
+          </div>
+          <div class="flex-1">
+            <div class="text-xs uppercase tracking-wide text-slate-light mb-2">Godziny otwarcia</div>
+            <div class="grid grid-cols-2 gap-x-6 gap-y-1 text-sm text-paper-raised">
+              <span>Poniedziałek – piątek</span><span class="text-right">08:00 – 18:00</span>
+              <span>Sobota</span><span class="text-right">09:00 – 14:00</span>
+              <span>Niedziela</span><span class="text-right text-slate-light">Zamknięte</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 dark-card pitch-card p-5">
+          <div class="w-12 h-12 rounded-full bg-clay/10 flex items-center justify-center shrink-0">
+            <i data-lucide="map" class="w-5 h-5 text-clay-bright"></i>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wide text-slate-light mb-1">Obszar działania</div>
+            <div class="font-display text-xl tracking-tight text-paper-raised">Mosina i okolice, woj. wielkopolskie</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pitch-card overflow-hidden min-h-[420px] border border-white/10">
+      <iframe
+        src="https://www.google.com/maps?q=Adama+Mickiewicza+2%2C+62-050+Mosina&output=embed"
+        class="w-full h-full min-h-[420px]"
+        style="border:0;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa dojazdu do Usługi Dekarskie w Mosinie">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-charcoal px-5 md:px-8 pt-16 pb-8 border-t border-white/10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <span class="font-display text-xl tracking-tight leading-none text-paper-raised block mb-4">
+          USŁUGI <span class="text-clay-bright">DEKARSKIE</span>
+        </span>
+        <p class="text-slate-light text-sm leading-relaxed max-w-xs">Firma budowlana. Montaż, naprawy i remonty dachów w Mosinie i okolicy.</p>
+      </div>
+      <div class="text-sm">
+        <div class="text-slate-light uppercase tracking-wide text-xs mb-4">Nawigacja</div>
+        <ul class="space-y-2">
+          <li><a href="uslugi.html" class="nav-link">Usługi</a></li>
+          <li><a href="index.html#realizacje" class="nav-link">Realizacje</a></li>
+          <li><a href="index.html#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="text-sm">
+        <div class="text-slate-light uppercase tracking-wide text-xs mb-4">Kontakt</div>
+        <ul class="space-y-2 text-paper-raised">
+          <li><a href="tel:789685846" class="nav-link">789 685 846</a></li>
+          <li class="text-slate-light">Adama Mickiewicza 2</li>
+          <li class="text-slate-light">62-050 Mosina</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-light">
+      <span>© 2026 Usługi Dekarskie. Wszelkie prawa zastrzeżone.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+  <button id="lightbox-close" class="absolute top-6 right-6 text-paper-raised hover:text-clay-bright transition-colors" aria-label="Zamknij podgląd">
+    <i data-lucide="x" class="w-8 h-8"></i>
+  </button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  lucide.createIcons();
+
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('is-scrolled', window.scrollY > 12);
+  });
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+      lightboxImg.src = item.dataset.full;
+      lightboxImg.alt = item.dataset.caption || '';
+      lightbox.classList.add('is-open');
+    });
+  });
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    lightboxImg.src = '';
+  }
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+  (function () {
+    const now = new Date();
+    const day = now.getDay();
+    const minutes = now.getHours() * 60 + now.getMinutes();
+    let open = false;
+    let closeLabel = '';
+    if (day >= 1 && day <= 5) {
+      open = minutes >= 480 && minutes < 1080;
+      closeLabel = 'Zamknięcie o 18:00';
+    } else if (day === 6) {
+      open = minutes >= 540 && minutes < 840;
+      closeLabel = 'Zamknięcie o 14:00';
+    } else {
+      open = false;
+    }
+    const dot = document.getElementById('status-dot');
+    const text = document.getElementById('status-text');
+    if (open) {
+      text.textContent = 'Otwarte teraz · ' + closeLabel;
+    } else {
+      text.textContent = 'Obecnie zamknięte';
+      dot.classList.remove('text-clay-bright');
+      dot.classList.add('text-slate-light');
+    }
+  })();
+</script>
+</body>
+</html>
